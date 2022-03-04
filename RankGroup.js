@@ -1,26 +1,73 @@
 class RankGroup extends Question{
 
-    constructor(prompt, prompts, start, end, finishFunction){
-        super(prompt, finishFunction, true);
+    constructor(prompt, title, promptFindingFunction, ranks, required = true){
+        super(prompt, required);
+        this.ranks = ranks
+        this.title = title;
         this.questions = []
-        for(var i = 0; i < prompts.length; i++){
-            this.questions.push(new RankQuestion(prompts[i], start, end));
+        this.promptFindingFunction = promptFindingFunction;
+
+    }
+
+    getPrompts(questions){
+        this.prompts = this.promptFindingFunction(questions);
+        for(var i = 0; i < this.prompts.length; i++){
+            this.questions.push(new RankQuestion(this.prompts[i], this.ranks, this.required));
         }
     }
 
-    display(parent){
 
-        this.groupDisplay = document.createElement("RankGroupSection")
+    displayContent(parent){
+        
+
+        this.groupDisplay = document.createElement("table")
+        this.groupDisplay.className = "RankGroup"
+
+        var titleBar = document.createElement("tr");
+        titleBar.className = "RankGroupTitleBar"
+        var title = document.createElement("th")
+        title.className = "RankGroupTitle"
+        title.innerHTML = this.title;
+        titleBar.appendChild(title);
+
+        this.ranks.forEach(rank => {
+            var rankHeading = document.createElement("th")
+            rankHeading.className = "RankHeading"
+            rankHeading.innerHTML = rank;
+            titleBar.appendChild(rankHeading);
+        });
+        this.groupDisplay.appendChild(titleBar);
+
+        
         
         for(var i = 0; i < this.questions.length; i++){
-            this.questions[i].display(parent);
+            this.questions[i].display(this.groupDisplay);
         }
+
+        parent.appendChild(this.groupDisplay);
 
     }
 
 
     validateAnswer(){
+        var success = true;
+        this.questions.forEach(question => {
+            if(!question.validateAnswer()){
+                success = false;
+            }
+        });
+        return success;
+    }
 
+    getAnswer(){
+        if(!this.validateAnswer()){
+            return null;
+        }
+        var result = []
+        this.questions.forEach(question => {
+            result.push(question.getAnswer());
+        });
+        return result;
     }
 
 }

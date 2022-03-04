@@ -1,8 +1,11 @@
 class Question{
-    constructor(prompt, finishFunction, required = false){
+    constructor(prompt, required = false){
         this.prompt = prompt;
-        this.next = finishFunction;
         this.required = required;
+    }
+
+    setFinishFunction(f){
+        this.finishFunction = f
     }
 
 
@@ -14,23 +17,28 @@ class Question{
     }
 
     displayContent(parent){
-        this.answerBox = createInput()
+        this.answerBox = createInput("", "answerBox", "AnswerBoxStyle", "text", this.required)
         parent.appendChild(this.answerBox);
     }
 
     displaySubmit(parent){
-        this.submitButton = new Button("Next");
-        this.submitButton.onclick = ()=>(this.submit());
+        this.submitButton = new Button("Next", parent, "SubmitButton", ()=>(this.submit()));
         parent.appendChild(this.submitButton.export())
     }
 
 
     display(parent){
-        
-        this.displayTitle(parent);
-        this.displayContent(parent);
-        this.displaySubmit(parent);
+        this.window = document.createElement("Question");
+        this.displayTitle(this.window);
+        this.displayContent(this.window);
+        this.displaySubmit(this.window);
 
+        parent.appendChild(this.window);
+
+    }
+
+    destroy(){
+        this.window.parentElement.removeChild(this.window);
     }
 
     validateAnswer(){
@@ -49,9 +57,9 @@ class Question{
     }
 
     submit(){
-        this.answer = getAnswer();
+        this.answer = this.getAnswer();
         if(this.answer != null){
-            finishFunction();
+            this.finishFunction();
         }
     }
 

@@ -1,1 +1,175 @@
-.
+
+PromptDisplay{
+
+}
+
+RankPrompt{
+  
+  font-size: 20pt;
+}
+
+.RankQuestion{
+  /*! flex-direction: row; */
+  /*! width: 100%; */
+  /*! border-top: 1px solid black; */
+  border-bottom: 1px solid black;
+  /*! display: table; */
+}
+
+.RankRadioGroup{
+  
+  padding-left: 2%;
+  /*! margin-left: 5%; */
+  padding-right: 2%;
+}
+
+SubmitButton{
+  
+  border: 1px solid black;
+  /*! margin: 1%; */
+  border-radius: 1rem;
+  padding: 1%;
+  width: max-content;
+  margin: 1%;
+  transition-duration : 1s;
+}
+
+SubmitButton:hover{
+  background: black;
+  color: white;
+}
+
+.RankGroupTitle{
+ 
+  font-size: 25pt;
+  text-align: left;
+}
+
+RankHeading{
+  
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+RankHeadings{
+  
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.RankGroupTitleBar{
+  
+  /*! display: flex; */
+  /*! flex-direction: row; */
+  /*! justify-content: space-between; */
+  /*! align-items: center; */
+  border-bottom: 2px solid black;
+}
+
+.RankGroup{
+
+  /*! display: flex; */
+  /*! flex-direction: column; */
+  width: 60%;
+  border-collapse: collapse;
+}
+MultipleChoiceQuestionRadioGroup{
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.RankQuestionRadio{
+  
+}
+
+RankRadioGroup{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+  }
+
+.RadioGroupItem{
+  
+}
+
+.RankQuestionInput{
+  
+  display: flex;
+  width: 100%;
+}
+
+Question{
+  
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.RankHeading{
+  
+  font-size: 15pt;
+}
+
+QuestionPrompt{
+  
+  font-size: 30pt;
+  text-decoration: underline;
+  padding-bottom: 2%;
+}
+
+
+
+CheckBoxQuestion{
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 150px;
+  width: 50%;
+  /*! justify-content: space-between; */
+  align-content: center;
+}
+
+.CheckBoxQuestion{
+
+}
+
+MultipleChoiceQuestion{
+  
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  /*! justify-content: space-between; */
+}
+
+InputBox{
+  
+  /*! padding: 2px; */
+  padding-right: 2%;
+  padding-left: 2%;
+  /*! width: 100%; */
+}
+
+.MultipleChoiceQuestion{
+  padding-left: 2%;
+    
+}
+
+.SubmitButton{
+
+}
+
+
+
+.QuestionPrompt{
+    
+}
+

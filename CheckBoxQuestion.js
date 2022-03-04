@@ -1,16 +1,16 @@
 class CheckBoxQuestion extends Question{
 
-    constructor(prompt, finishFunction, options, required = false){
-        super(prompt, finishFunction, required);
+    constructor(prompt, options, required = false){
+        super(prompt, required);
         this.options = options;
     }
 
 
     displayContent(parent){
-        checkboxWindow = document.createElement("CheckBoxSection");
+        var checkboxWindow = document.createElement("CheckBoxQuestion");
         this.checkBoxes = [];
-        options.forEach(option => {
-            var checkBox = getCheckBox(option);
+        this.options.forEach(option => {
+            var checkBox = createInput(option, IDManager.getID(), "CheckBox", "checkbox", false, false);
             this.checkBoxes.push(checkBox);
             checkboxWindow.appendChild(checkBox);
         });
@@ -23,7 +23,7 @@ class CheckBoxQuestion extends Question{
         }
         var oneChecked = false;
         for(var i = 0; i < this.checkBoxes.length; i++){
-            if(this.checkBoxes[i].checked){
+            if(this.checkBoxes[i].childNodes[0].checked){
                 oneChecked = true;
                 break;
             }
@@ -37,7 +37,7 @@ class CheckBoxQuestion extends Question{
         }
         var answer = [];
         for(var i = 0; i < this.checkBoxes.length; i++){
-            if(this.checkBoxes[i].checked){
+            if(this.checkBoxes[i].childNodes[0].checked){
                 answer.push(this.options[i]);
             }
         }

@@ -1,13 +1,18 @@
 class MultipleChoiceQuestion extends Question{
-    constructor(prompt, finishFunction, options, required = false){
-        super(prompt, finishFunction, required);
+    constructor(prompt, options, required = false){
+        super(prompt, required);
         this.options = options;
     }
 
 
+
+
     displayContent(parent){
-        this.radioGroup = createRadioGroup(options);
-        parent.appendChild(this.radioGroup.export());
+        let q = document.createElement("MultipleChoiceQuestion")
+        this.radioGroup = new RadioGroup(this.options, this.required, IDManager.getID(), "MultipleChoiceQuestionRadioGroup");
+        this.radioGroup.display(q);
+        parent.appendChild(q);
+        
     }
 
     validateAnswer(){
