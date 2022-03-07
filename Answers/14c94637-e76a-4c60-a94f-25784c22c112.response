@@ -1,0 +1,7 @@
+MULTIPLECHOICEQUESTION$$$What subject did you study at university?$$$Computer Science/Software Engineering,0
+CHECKBOXQUESTION$$$Which of the following languages did you know prior to starting your degree?$$$C$$C++
+RANKGROUPQUESTION$$$How useful have these languages been in your career$$$C:::0Not at all useful$$C++:::1Rarely useful
+CHECKBOXQUESTION$$$Which of the following web frameworks did you know prior to starting your degree?$$$Angular.js$$Django$$Drupal$$Express$$Flask$$Gatsby$$Laravel$$jQuery$$React.js$$Ruby on Rails$$Spring$$Symfony$$Vue.js
+RANKGROUPQUESTION$$$How useful have these frameworks been in your career$$$Angular.js:::0Not at all useful$$Django:::0Not at all useful$$Drupal:::0Not at all useful$$Express:::0Not at all useful$$Flask:::0Not at all useful$$Gatsby:::0Not at all useful$$Laravel:::0Not at all useful$$jQuery:::0Not at all useful$$React.js:::0Not at all useful$$Ruby on Rails:::0Not at all useful$$Spring:::0Not at all useful$$Symfony:::0Not at all useful$$Vue.js:::0Not at all useful
+CHECKBOXQUESTION$$$Which of the following languages did you learn during your degree?$$$C#$$Java
+RANKGROUPQUESTION$$$How useful have these langauges been in your career$$$C#:::0Not at all useful$$Java:::1Rarely useful
