@@ -66,12 +66,13 @@ class Survey{
     }
 
     submit(){
-        text = ""
+        var text = ""
         for(var i = 0; i < this.questions.length - 1; i++){
             text += this.questions[i].toString() + "\n"
         }
         text += this.questions[this.questions.length - 1].toString()
         uploadAnswer(getUUID(), text)
+        alert("Thank you for completing the survey, you may now close the window")
     }
 
     onsubmit(){

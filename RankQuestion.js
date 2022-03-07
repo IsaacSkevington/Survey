@@ -16,5 +16,12 @@ class RankQuestion{
         this.radioGroup.group.insertBefore(promptDisplay, this.radioGroup.group.childNodes[0]);
     }
 
-    
+    validateAnswer(){
+        return this.radioGroup.getSelected() != null
+    }
+
+    getAnswer(){
+        return this.radioGroup.getSelected()
+    }
+
 }
