@@ -1,0 +1,13 @@
+1$$$MULTIPLECHOICEQUESTION$$$What subject did you study at university?$$$Computer Science/Software Engineering
+2$$$CHECKBOXQUESTION$$$Which of the following languages did you know prior to starting your degree?$$$C++
+3$$$RANKGROUPQUESTION$$$How useful have these languages been in your career$$$C++:::1:::Rarely useful
+4$$$CHECKBOXQUESTION$$$Which of the following web frameworks did you know prior to starting your degree?$$$ASP.NET
+5$$$RANKGROUPQUESTION$$$How useful have these frameworks been in your career$$$ASP.NET:::1:::Rarely useful
+6$$$CHECKBOXQUESTION$$$Which of the following languages did you learn during your degree?$$$JavaScript
+7$$$RANKGROUPQUESTION$$$How useful have these languages been in your career$$$JavaScript:::1:::Rarely useful
+8$$$CHECKBOXQUESTION$$$Which of the following frameworks did you learn during your degree?$$$Drupal
+9$$$RANKGROUPQUESTION$$$How useful have these frameworks been in your career$$$Drupal:::1:::Rarely useful
+10$$$CHECKBOXQUESTION$$$Which of the following languages did you learn as part of your job?$$$Kotlin
+11$$$RANKGROUPQUESTION$$$How useful have these languages been in your career$$$Kotlin:::1:::Rarely useful
+12$$$RANKGROUPQUESTION$$$How much time did you spend learning these languages (hours)$$$Kotlin:::2:::51-100
+13$$$RANKGROUPQUESTION$$$What percentage of this time was during work hours$$$Kotlin:::2:::21-30
