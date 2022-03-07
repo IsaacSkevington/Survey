@@ -1,9 +1,13 @@
+CHECKBOXQUESTION = "CHECKBOXQUESTION"
+
+
 class CheckBoxQuestion extends Question{
 
     constructor(prompt, options, required = false){
         super(prompt, required);
         this.options = options;
     }
+
 
 
     displayContent(parent){
@@ -43,4 +47,15 @@ class CheckBoxQuestion extends Question{
         }
         return answer
     }
+
+    toString(){
+        var text = this.prompt + QUESTIONDELIM
+        for(var i = 0; i < this.answer.length - 1; i++){
+            text += this.answer[i] + DATADELIM
+        }
+        text += this.answer[this.answer.length - 1]
+
+        return text
+    }
+
 }

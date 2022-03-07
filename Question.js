@@ -64,6 +64,11 @@ class Question{
     }
 
 
+    toString(){
+        
+    }
+
+
 
 
 }

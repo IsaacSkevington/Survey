@@ -1,3 +1,7 @@
+MULTIPLECHOICEQUESTION = "MULTIPLECHOICEQUESTION"
+
+
+
 class MultipleChoiceQuestion extends Question{
     constructor(prompt, options, required = false){
         super(prompt, required);
@@ -28,5 +32,9 @@ class MultipleChoiceQuestion extends Question{
             return null;
         }
         return this.radioGroup.getSelected();
+    }
+
+    toString(){
+        return this.prompt + QUESTIONDELIM + this.answer
     }
 }

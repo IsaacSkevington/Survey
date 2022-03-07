@@ -48,16 +48,30 @@ class Survey{
             this.questions[this.questionNumber - 1].question.destroy();
         }
         catch{}
-        if(this.questions[this.questionNumber].excludeFunction == null || this.questions[this.questionNumber].excludeFunction(this.questions)){
-            if(this.questions[this.questionNumber].changeFunction != null){
-                this.questions[this.questionNumber].changeFunction(this.questions[this.questionNumber].question, this.questions);
-            }
-            this.questions[this.questionNumber].question.display(this.questionFrame);
+        if(this.questionNumber == this.questions.length){
+            this.submit()
         }
         else{
-            this.onsubmit();
+            if(this.questions[this.questionNumber].excludeFunction == null || this.questions[this.questionNumber].excludeFunction(this.questions)){
+                if(this.questions[this.questionNumber].changeFunction != null){
+                    this.questions[this.questionNumber].changeFunction(this.questions[this.questionNumber].question, this.questions);
+                }
+                this.questions[this.questionNumber].question.display(this.questionFrame);
+            }
+            else{
+                this.onsubmit();
+            }
         }
         
+    }
+
+    submit(){
+        text = ""
+        for(var i = 0; i < this.questions.length - 1; i++){
+            text += this.questions[i].toString() + "\n"
+        }
+        text += this.questions[this.questions.length - 1].toString()
+        uploadAnswer(getUUID(), text)
     }
 
     onsubmit(){

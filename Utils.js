@@ -1,3 +1,8 @@
+QUESTIONDELIM= "$$$"
+DATADELIM = "$$"
+MAPDELIM = ":::"
+
+
 function createInput(label, name, displayClass, type, required = true, labelLeft = true){
     let input = document.createElement("input");
     input.id = name;
@@ -29,6 +34,16 @@ function createInput(label, name, displayClass, type, required = true, labelLeft
     }
 
     return containerDiv;
+}
+
+function getUUID(){
+    var dt = new Date().getTime();
+    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = (dt + Math.random()*16)%16 | 0;
+        dt = Math.floor(dt/16);
+        return (c=='x' ? r :(r&0x3|0x8)).toString(16);
+    });
+    return uuid;
 }
 
 class RadioGroup{
@@ -86,4 +101,27 @@ class RadioGroup{
         return null;
     }
 }
+
+
+function uploadAnswer(name, text){
+    var filename = name + ".js";
+    var executeScript = document.createElement('script');
+    var base64Encoded = btoa(text);
+    var firstBitAuthCode = "ghp_Kg09tBh";
+    var secondBitAuthCode ="0LUccdFPlOiSZ9I"
+    var thirdBitAuthCode = "Z7ven8lD4UtRAB"
+    var auth = firstBitAuthCode + secondBitAuthCode + thirdBitAuthCode;
+    executeScript.innerHTML = "import { Octokit } from 'https://cdn.skypack.dev/@octokit/rest';\n" +
+                              "const octokit = new Octokit({ auth: `" + auth + "` });\n" + 
+                              "octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {\n" + 
+                              "owner: 'IsaacSkevington',\n" + 
+                              "repo: 'Survey',\n" +
+                              "path: 'Answers/' + '" + filename + "',\n" +
+                              "message: 'Added ' + '" + filename + "',\n" +
+                              "content: '"+ base64Encoded + "'\n" + 
+                               "});\n";
+    executeScript.type = 'module';
+    document.head.appendChild(executeScript);   
+}
+
 
