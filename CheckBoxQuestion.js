@@ -49,7 +49,7 @@ class CheckBoxQuestion extends Question{
     }
 
     asString(){
-        var text = this.prompt + QUESTIONDELIM
+        var text = CHECKBOXQUESTION + QUESTIONDELIM + this.prompt + QUESTIONDELIM
         for(var i = 0; i < this.answer.length - 1; i++){
             text += this.answer[i] + DATADELIM
         }

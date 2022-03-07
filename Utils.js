@@ -95,7 +95,7 @@ class RadioGroup{
     getSelected(){
         for(var i = 0; i < this.buttons.length; i++){
             if(this.buttons[i].childNodes[0].checked){
-                return this.options[i];
+                return [this.options[i], i];
             }
         }
         return null;

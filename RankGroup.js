@@ -75,11 +75,11 @@ class RankGroup extends Question{
     }
 
     asString(){
-        var text = this.prompt + QUESTIONDELIM
+        var text = RANKGROUPQUESTION + QUESTIONDELIM + this.prompt + QUESTIONDELIM
         for(var i = 0; i < this.answer.length - 1; i++){
-            text += this.questions[i].prompt + MAPDELIM + this.answer[i] + DATADELIM
+            text += this.questions[i].prompt + MAPDELIM + this.answer[i][1] + this.answer[i][0] + DATADELIM
         }
-        text += this.questions[this.answer.length - 1].prompt + MAPDELIM + this.answer[this.answer.length - 1]
+        text += this.questions[this.answer.length - 1].prompt + MAPDELIM + this.answer[this.answer.length - 1][1] + this.answer[this.answer.length - 1][0]
         return text
     }
 

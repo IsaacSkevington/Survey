@@ -35,6 +35,6 @@ class MultipleChoiceQuestion extends Question{
     }
 
     asString(){
-        return this.prompt + QUESTIONDELIM + this.answer
+        return MULTIPLECHOICEQUESTION + QUESTIONDELIM + this.prompt + QUESTIONDELIM + this.answer
     }
 }
