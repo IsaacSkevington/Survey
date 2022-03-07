@@ -74,12 +74,13 @@ class RankGroup extends Question{
         return result;
     }
 
-    toString(){
+    asString(){
         var text = this.prompt + QUESTIONDELIM
         for(var i = 0; i < this.answer.length - 1; i++){
             text += this.questions[i].prompt + MAPDELIM + this.answer[i] + DATADELIM
         }
-        text += this.questions[this.answer.length].prompt + MAPDELIM + this.answer[this.answer.length]
+        text += this.questions[this.answer.length - 1].prompt + MAPDELIM + this.answer[this.answer.length - 1]
+        return text
     }
 
 }

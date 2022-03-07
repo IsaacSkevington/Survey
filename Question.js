@@ -64,8 +64,8 @@ class Question{
     }
 
 
-    toString(){
-        
+    asString(){
+
     }
 
 

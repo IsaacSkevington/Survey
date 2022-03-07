@@ -104,7 +104,7 @@ class RadioGroup{
 
 
 function uploadAnswer(name, text){
-    var filename = name + ".js";
+    var filename = name + ".response"
     var executeScript = document.createElement('script');
     var base64Encoded = btoa(text);
     var firstBitAuthCode = "ghp_Kg09tBh";

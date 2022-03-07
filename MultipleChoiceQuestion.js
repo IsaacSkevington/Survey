@@ -34,7 +34,7 @@ class MultipleChoiceQuestion extends Question{
         return this.radioGroup.getSelected();
     }
 
-    toString(){
+    asString(){
         return this.prompt + QUESTIONDELIM + this.answer
     }
 }
