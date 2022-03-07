@@ -1,0 +1,5 @@
+MULTIPLECHOICEQUESTION$$$What subject did you study at university?$$$Computer Science/Software Engineering,0
+CHECKBOXQUESTION$$$Which of the following languages did you know prior to starting your degree?$$$C$$C++
+RANKGROUPQUESTION$$$How useful have these languages been in your career (0-5)$$$C:::1Rarely useful$$C++:::Not at all useful,0
+CHECKBOXQUESTION$$$Which of the following web frameworks did you know prior to starting your degree?$$$Angular.js$$ASP.NET
+RANKGROUPQUESTION$$$How useful have these frameworks been in your career (0-5)$$$Angular.js:::4Indispensible$$ASP.NET:::Not at all useful,0
