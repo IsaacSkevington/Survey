@@ -1,0 +1,13 @@
+1$$$MULTIPLECHOICEQUESTION$$$What subject did you study at university?$$$Computer Science/Software Engineering,0
+2$$$CHECKBOXQUESTION$$$Which of the following languages did you know prior to starting your degree?$$$C$$C++
+3$$$RANKGROUPQUESTION$$$How useful have these languages been in your career$$$C:::1:::Rarely useful$$C++:::1:::Rarely useful
+4$$$CHECKBOXQUESTION$$$Which of the following web frameworks did you know prior to starting your degree?$$$Django$$Drupal
+5$$$RANKGROUPQUESTION$$$How useful have these frameworks been in your career$$$Django:::1:::Rarely useful$$Drupal:::2:::Sometimes Useful
+6$$$CHECKBOXQUESTION$$$Which of the following languages did you learn during your degree?$$$Haskell$$Go
+7$$$RANKGROUPQUESTION$$$How useful have these languages been in your career$$$Haskell:::1:::Rarely useful$$Go:::2:::Sometimes Useful
+8$$$CHECKBOXQUESTION$$$Which of the following frameworks did you learn during your degree?$$$Flask$$Gatsby
+9$$$RANKGROUPQUESTION$$$How useful have these frameworks been in your career$$$Flask:::1:::Rarely useful$$Gatsby:::1:::Rarely useful
+10$$$CHECKBOXQUESTION$$$Which of the following languages did you learn as part of your job?$$$Kotlin
+11$$$RANKGROUPQUESTION$$$How useful have these languages been in your career$$$Kotlin:::1:::Rarely useful
+11$$$RANKGROUPQUESTION$$$How much time did you spend learning these languages (hours)$$$Kotlin:::2:::51-100
+11$$$RANKGROUPQUESTION$$$What percentage of this time was during work hours$$$Kotlin(% of 51-100 hours):::1:::11-20
