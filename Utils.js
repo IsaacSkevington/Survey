@@ -102,6 +102,15 @@ class RadioGroup{
     }
 }
 
+function difference(array1, array2){
+    out = []
+    array1.forEach(e1 => {
+        if(!array2.includes(e1)){
+            out.push(e1)
+        }
+    });
+    return out
+}
 
 function uploadAnswer(name, text){
     var filename = name + ".response"

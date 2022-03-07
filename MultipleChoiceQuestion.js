@@ -3,8 +3,8 @@ MULTIPLECHOICEQUESTION = "MULTIPLECHOICEQUESTION"
 
 
 class MultipleChoiceQuestion extends Question{
-    constructor(prompt, options, required = false){
-        super(prompt, required);
+    constructor(number, prompt, options, required = false){
+        super(number, prompt, required);
         this.options = options;
     }
 
@@ -35,6 +35,6 @@ class MultipleChoiceQuestion extends Question{
     }
 
     asString(){
-        return MULTIPLECHOICEQUESTION + QUESTIONDELIM + this.prompt + QUESTIONDELIM + this.answer
+        return this.number + QUESTIONDELIM + MULTIPLECHOICEQUESTION + QUESTIONDELIM + this.prompt + QUESTIONDELIM + this.answer
     }
 }

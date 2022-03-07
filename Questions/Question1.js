@@ -1,6 +1,7 @@
-let QUESTION1 =     
+var QUESTION =     
 new QuestionParams(
     new MultipleChoiceQuestion(
+        1,
         "What subject did you study at university?",
         [
             "Computer Science/Software Engineering",
@@ -12,4 +13,4 @@ new QuestionParams(
         true
     )
 )
-SURVEY.addQuestion(QUESTION1)
+SURVEY.addQuestion(QUESTION)

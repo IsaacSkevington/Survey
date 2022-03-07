@@ -1,25 +1,11 @@
-let QUESTION2 =     
+var QUESTION =     
 new QuestionParams(
     new CheckBoxQuestion(
+        2,
         "Which of the following languages did you know prior to starting your degree?",
-        [
-            "C",
-            "C++",
-            "C#",
-            "Java",
-            "JavaScript",
-            "Kotlin",
-            "Haskell",
-            "Go",
-            "Php",
-            "Python",
-            "Ruby",
-            "Rust",
-            "Swift",
-            "Visual Basic"
-        ],
+        LANGUAGES,
         true
     ),
     null
 )
-SURVEY.addQuestion(QUESTION2)
+SURVEY.addQuestion(QUESTION)

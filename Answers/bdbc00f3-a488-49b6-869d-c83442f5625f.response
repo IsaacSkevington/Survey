@@ -1,5 +1,0 @@
-MULTIPLECHOICEQUESTION$$$What subject did you study at university?$$$Other science degree,2
-CHECKBOXQUESTION$$$Which of the following languages did you know prior to starting your degree?$$$C$$C#
-RANKGROUPQUESTION$$$How useful have these languages been in your career (0-5)$$$C:::0Not at all useful$$C#:::2Sometimes Useful
-CHECKBOXQUESTION$$$Which of the following web frameworks did you know prior to starting your degree?$$$Angular.js$$Drupal
-RANKGROUPQUESTION$$$How useful have these frameworks been in your career (0-5)$$$Angular.js:::0Not at all useful$$Drupal:::3Very Useful

@@ -1,8 +1,8 @@
-var QUESTION =     
+let QUESTION =     
 new QuestionParams(
     new RankGroup(
-        3,
-        "How useful have these languages been in your career",
+        9,
+        "How useful have these frameworks been in your career",
         "Usefulness",
         [],
         ["Not at all useful", "Rarely useful", "Sometimes Useful", "Very Useful", "Indispensible"],
@@ -10,7 +10,7 @@ new QuestionParams(
     ),
     null,
     function(question, questions){
-        question.setPrompts(questions[1].question.answer)
+        question.setPrompts(questions[7].question.answer)
     }
 )
 SURVEY.addQuestion(QUESTION)

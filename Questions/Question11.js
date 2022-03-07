@@ -1,7 +1,7 @@
-var QUESTION =     
+let QUESTION =     
 new QuestionParams(
     new RankGroup(
-        3,
+        11,
         "How useful have these languages been in your career",
         "Usefulness",
         [],
@@ -10,7 +10,7 @@ new QuestionParams(
     ),
     null,
     function(question, questions){
-        question.setPrompts(questions[1].question.answer)
+        question.setPrompts(questions[9].question.answer)
     }
 )
 SURVEY.addQuestion(QUESTION)

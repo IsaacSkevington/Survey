@@ -1,5 +1,6 @@
 class Question{
-    constructor(prompt, required = false){
+    constructor(number, prompt, required = false){
+        this.number = number
         this.prompt = prompt;
         this.required = required;
     }

@@ -1,17 +1,16 @@
-let QUESTION5 =     
+let QUESTION =     
 new QuestionParams(
     new RankGroup(
-        "How useful have these frameworks been in your career (0-5)",
+        5,
+        "How useful have these frameworks been in your career",
         "Usefulness",
-        function(questions){
-            return questions[3].question.answer
-        },
+        [],
         ["Not at all useful", "Rarely useful", "Sometimes Useful", "Very Useful", "Indispensible"],
         true
     ),
     null,
-    function(question5, questions){
-        question5.getPrompts(questions)
+    function(question, questions){
+        question.setPrompts(questions[3].question.answer)
     }
 )
-SURVEY.addQuestion(QUESTION5)
+SURVEY.addQuestion(QUESTION)

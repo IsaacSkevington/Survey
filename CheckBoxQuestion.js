@@ -3,12 +3,12 @@ CHECKBOXQUESTION = "CHECKBOXQUESTION"
 
 class CheckBoxQuestion extends Question{
 
-    constructor(prompt, options, required = false){
-        super(prompt, required);
+    constructor(number, prompt, options, required = false){
+        super(number, prompt, required);
         this.options = options;
     }
 
-
+    
 
     displayContent(parent){
         var checkboxWindow = document.createElement("CheckBoxQuestion");
@@ -49,7 +49,7 @@ class CheckBoxQuestion extends Question{
     }
 
     asString(){
-        var text = CHECKBOXQUESTION + QUESTIONDELIM + this.prompt + QUESTIONDELIM
+        var text = this.number + QUESTIONDELIM + CHECKBOXQUESTION + QUESTIONDELIM + this.prompt + QUESTIONDELIM
         for(var i = 0; i < this.answer.length - 1; i++){
             text += this.answer[i] + DATADELIM
         }

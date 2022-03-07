@@ -4,17 +4,17 @@ RANKGROUPQUESTION = "RANKGROUPQUESTION"
 
 class RankGroup extends Question{
 
-    constructor(prompt, title, promptFindingFunction, ranks, required = true){
-        super(prompt, required);
+    constructor(number, prompt, title, prompts, ranks, required = true){
+        super(number, prompt, required);
         this.ranks = ranks
         this.title = title;
         this.questions = []
-        this.promptFindingFunction = promptFindingFunction;
+        this.prompts = prompts
 
     }
 
-    getPrompts(questions){
-        this.prompts = this.promptFindingFunction(questions);
+    setPrompts(prompts){
+        this.prompts = prompts
         for(var i = 0; i < this.prompts.length; i++){
             this.questions.push(new RankQuestion(this.prompts[i], this.ranks, this.required));
         }
@@ -75,11 +75,11 @@ class RankGroup extends Question{
     }
 
     asString(){
-        var text = RANKGROUPQUESTION + QUESTIONDELIM + this.prompt + QUESTIONDELIM
+        var text = this.number + QUESTIONDELIM + RANKGROUPQUESTION + QUESTIONDELIM + this.prompt + QUESTIONDELIM
         for(var i = 0; i < this.answer.length - 1; i++){
-            text += this.questions[i].prompt + MAPDELIM + this.answer[i][1] + this.answer[i][0] + DATADELIM
+            text += this.questions[i].prompt + MAPDELIM + this.answer[i][1] + MAPDELIM + this.answer[i][0] + DATADELIM
         }
-        text += this.questions[this.answer.length - 1].prompt + MAPDELIM + this.answer[this.answer.length - 1][1] + this.answer[this.answer.length - 1][0]
+        text += this.questions[this.answer.length - 1].prompt + MAPDELIM + this.answer[this.answer.length - 1][1] + MAPDELIM + this.answer[this.answer.length - 1][0]
         return text
     }
 

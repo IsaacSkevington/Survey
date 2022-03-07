@@ -1,5 +1,0 @@
-MULTIPLECHOICEQUESTION$$$What subject did you study at university?$$$Computer Science/Software Engineering,0
-CHECKBOXQUESTION$$$Which of the following languages did you know prior to starting your degree?$$$C#$$Java
-RANKGROUPQUESTION$$$How useful have these languages been in your career (0-5)$$$C#:::0Not at all useful$$Java:::0Not at all useful
-CHECKBOXQUESTION$$$Which of the following web frameworks did you know prior to starting your degree?$$$Angular.js$$Vue.js
-RANKGROUPQUESTION$$$How useful have these frameworks been in your career (0-5)$$$Angular.js:::2Sometimes Useful$$Vue.js:::1Rarely useful
