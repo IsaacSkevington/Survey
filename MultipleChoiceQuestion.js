@@ -6,6 +6,7 @@ class MultipleChoiceQuestion extends Question{
     constructor(number, prompt, options, required = false){
         super(number, prompt, required);
         this.options = options;
+        this.answer = ""
     }
 
 

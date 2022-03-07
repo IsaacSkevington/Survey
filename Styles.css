@@ -132,7 +132,7 @@ CheckBoxQuestion{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 150px;
+  height: 100%;
   /*! width: 50%; */
   /*! justify-content: space-between; */
   /*! align-content: center; */

@@ -8,7 +8,9 @@ new QuestionParams(
         ["0-10", "11-50", "51-100", "101-200", "201-500", "500+"],
         true
     ),
-    null,
+    function(questions){
+        return questions[9].question.answer.length == 0
+    },
     function(question, questions){
         question.setPrompts(questions[9].question.answer)
     }

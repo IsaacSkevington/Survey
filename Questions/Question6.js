@@ -4,6 +4,7 @@ new QuestionParams(
         6,
         "Which of the following languages did you learn during your degree?",
         [],
+        true,
         true
     ),
     null,

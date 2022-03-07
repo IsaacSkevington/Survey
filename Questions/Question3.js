@@ -8,7 +8,9 @@ new QuestionParams(
         ["Not at all useful", "Rarely useful", "Sometimes Useful", "Very Useful", "Indispensible"],
         true
     ),
-    null,
+    function(questions){
+        return questions[1].question.answer.length == 0
+    },
     function(question, questions){
         question.setPrompts(questions[1].question.answer)
     }

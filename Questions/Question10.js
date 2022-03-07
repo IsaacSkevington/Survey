@@ -4,6 +4,7 @@ new QuestionParams(
         10,
         "Which of the following languages did you learn as part of your job?",
         [],
+        true,
         true
     ),
     null,

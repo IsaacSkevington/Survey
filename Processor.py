@@ -8,6 +8,8 @@ MAPDELIM = ":::"
 OPTION = 0
 QUANTITY = 1
 
+NONEOFABOVE = "None of the above"
+
 questions = {}
 
 
@@ -69,6 +71,12 @@ def checkBoxQuestionProcess(id, raw):
         questions[id].data[QUANTITY] = {}
         questions[id].columnHeadings[QUANTITY] = "Quantity"
     selectedOptions = raw.split(DATADELIM)
+    if selectedOptions == ['']:
+        if(NONEOFABOVE not in questions[id].data[OPTION]):
+            questions[id].data[OPTION][NONEOFABOVE] = NONEOFABOVE
+            questions[id].data[QUANTITY][NONEOFABOVE] = 0
+        questions[id].data[QUANTITY][NONEOFABOVE] += 1
+        return 0
     for option in selectedOptions:
         if option not in questions[id].data[OPTION]:
             questions[id].data[OPTION][option] = option
@@ -94,6 +102,8 @@ def rankGroupQuestionProcess(id, raw):
         questions[id].data[OPTION] = {}
         questions[id].columnHeadings[OPTION] = "Option"
     options = raw.split(DATADELIM)
+    if options == ['']:
+        return 0
     for option in options:
         optionData = option.split(MAPDELIM)
         rowHeading = optionData[0]

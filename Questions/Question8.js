@@ -4,6 +4,7 @@ new QuestionParams(
         8,
         "Which of the following frameworks did you learn during your degree?",
         [],
+        true,
         true
     ),
     null,

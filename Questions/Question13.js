@@ -8,7 +8,9 @@ new QuestionParams(
         ["0-10", "11-20", "21-30", "31-40", "41-50", "51-60", "61-70", "71-80", "81-90", "91-100"],
         true
     ),
-    null,
+    function(questions){
+        return questions[9].question.answer.length == 0
+    },
     function(question, questions){
         var extraPrompts = []
         for(var i = 0; i < questions[11].question.answer.length; i++){

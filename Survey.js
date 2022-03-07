@@ -52,7 +52,7 @@ class Survey{
             this.submit()
         }
         else{
-            if(this.questions[this.questionNumber].excludeFunction == null || this.questions[this.questionNumber].excludeFunction(this.questions)){
+            if(this.questions[this.questionNumber].excludeFunction == null || !this.questions[this.questionNumber].excludeFunction(this.questions)){
                 if(this.questions[this.questionNumber].changeFunction != null){
                     this.questions[this.questionNumber].changeFunction(this.questions[this.questionNumber].question, this.questions);
                 }

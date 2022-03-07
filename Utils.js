@@ -3,13 +3,16 @@ DATADELIM = "$$"
 MAPDELIM = ":::"
 
 
-function createInput(label, name, displayClass, type, required = true, labelLeft = true){
+function createInput(label, name, displayClass, type, required = true, labelLeft = true, onclick = null){
     let input = document.createElement("input");
     input.id = name;
     input.name = name;
     input.className = displayClass;
     input.type = type;
     input.required = required;
+    if(onclick != null){
+        input.onclick = onclick
+    }
 
     let inputLabel = document.createElement('label');
     inputLabel.for = input.id;

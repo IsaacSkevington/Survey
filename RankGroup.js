@@ -11,6 +11,7 @@ class RankGroup extends Question{
         this.questions = []
         this.prompts = prompts
         this.extraPrompts = []
+        this.answer = []
 
     }
 
@@ -90,7 +91,9 @@ class RankGroup extends Question{
         for(var i = 0; i < this.answer.length - 1; i++){
             text += this.questions[i].prompt + MAPDELIM + this.answer[i][1] + MAPDELIM + this.answer[i][0] + DATADELIM
         }
-        text += this.questions[this.answer.length - 1].prompt + MAPDELIM + this.answer[this.answer.length - 1][1] + MAPDELIM + this.answer[this.answer.length - 1][0]
+        if(this.answer.length != 0){
+            text += this.questions[this.answer.length - 1].prompt + MAPDELIM + this.answer[this.answer.length - 1][1] + MAPDELIM + this.answer[this.answer.length - 1][0]
+        }
         return text
     }
 

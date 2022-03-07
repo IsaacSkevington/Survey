@@ -4,6 +4,7 @@ new QuestionParams(
         4,
         "Which of the following web frameworks did you know prior to starting your degree?",
         FRAMEWORKS,
+        true,
         true
     ),
     null
