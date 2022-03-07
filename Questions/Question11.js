@@ -1,4 +1,4 @@
-let QUESTION =     
+QUESTION =     
 new QuestionParams(
     new RankGroup(
         11,

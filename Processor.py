@@ -31,11 +31,11 @@ class QuestionData:
         row = 1
         column += 1
 
-        for columnNumber in sorted(self.columnHeadings.keys):
+        for columnNumber in sorted(self.columnHeadings.keys()):
             if columnNumber != OPTION:
                 total = 0
                 sheet.write(row, column, self.columnHeadings[columnNumber])
-                for rowValue in sorted(self.data[columnNumber]):
+                for rowValue in sorted(self.data[columnNumber].keys()):
                     row += 1
                     sheet.write(row, column, self.data[columnNumber][rowValue])
                     total += self.data[columnNumber][rowValue]
@@ -72,8 +72,8 @@ def checkBoxQuestionProcess(id, raw):
     for option in selectedOptions:
         if option not in questions[id].data[OPTION]:
             questions[id].data[OPTION][option] = option
-            questions[id].data[OPTION][option] = 0
-        questions[id].data[OPTION][option] += 1
+            questions[id].data[QUANTITY][option] = 0
+        questions[id].data[QUANTITY][option] += 1
 
 
 def multipleChoiceQuestionProcess(id, raw):
@@ -85,7 +85,7 @@ def multipleChoiceQuestionProcess(id, raw):
     option = raw
     if option not in questions[id].data[OPTION]:
         questions[id].data[OPTION][option] = option
-        questions[id].data[OPTION][option] = 0
+        questions[id].data[QUANTITY][option] = 0
     questions[id].data[QUANTITY][option] += 1
 
 
@@ -107,7 +107,7 @@ def rankGroupQuestionProcess(id, raw):
         if columnNumber not in questions[id].data:
             questions[id].data[columnNumber] = {}
             questions[id].columnHeadings[columnNumber] = columnHeading
-            for otherRowHeading in questions[id].data["Option"]:
+            for otherRowHeading in questions[id].data[OPTION]:
                 questions[id].data[columnNumber][otherRowHeading] = 0  
         questions[id].data[columnNumber][rowHeading] += 1
 

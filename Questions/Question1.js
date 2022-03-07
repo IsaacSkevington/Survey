@@ -1,4 +1,4 @@
-var QUESTION =     
+QUESTION =     
 new QuestionParams(
     new MultipleChoiceQuestion(
         1,

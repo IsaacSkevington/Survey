@@ -1,6 +1,7 @@
 class RankQuestion{
-    constructor(prompt, ranks, required = false){
+    constructor(prompt, ranks, required = false, extraPrompt = ""){
         this.prompt = prompt;
+        this.extraPrompt = extraPrompt;
         this.ranks = ranks;
         this.id = IDManager.getID()
         this.ranks = [];
@@ -11,7 +12,7 @@ class RankQuestion{
 
     display(parent){
         let promptDisplay = document.createElement("RankPrompt");
-        promptDisplay.innerHTML = this.prompt;
+        promptDisplay.innerHTML = this.prompt + " " + this.extraPrompt;
         this.radioGroup.display(parent, ["td", "RankQuestionRadio"]);
         this.radioGroup.group.insertBefore(promptDisplay, this.radioGroup.group.childNodes[0]);
     }

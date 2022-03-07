@@ -1,4 +1,4 @@
-let QUESTION =     
+QUESTION =     
 new QuestionParams(
     new CheckBoxQuestion(
         8,
@@ -8,7 +8,7 @@ new QuestionParams(
     ),
     null,
     function(question, questions){
-        question.options = difference(LANGUAGES, questions[3].question.answer)
+        question.options = difference(FRAMEWORKS, questions[3].question.answer)
     }
 )
 SURVEY.addQuestion(QUESTION)

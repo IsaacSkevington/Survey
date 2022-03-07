@@ -47,7 +47,7 @@ function getUUID(){
 }
 
 class RadioGroup{
-    constructor(options, required, name, displayItem, displayClass = "", noText){
+    constructor(options, required, name, displayItem, displayClass = "", noText = false){
         this.options = options;
         this.noText = noText
         this.required = required;

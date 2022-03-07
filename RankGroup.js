@@ -10,13 +10,24 @@ class RankGroup extends Question{
         this.title = title;
         this.questions = []
         this.prompts = prompts
+        this.extraPrompts = []
 
     }
 
     setPrompts(prompts){
         this.prompts = prompts
+        this.questions = []
         for(var i = 0; i < this.prompts.length; i++){
             this.questions.push(new RankQuestion(this.prompts[i], this.ranks, this.required));
+        }
+    }
+
+    
+    setExtraPrompts(prompts){
+        this.extraPrompts = prompts
+        this.questions = []
+        for(var i = 0; i < this.prompts.length; i++){
+            this.questions.push(new RankQuestion(this.prompts[i], this.ranks, this.required, this.extraPrompts[i]));
         }
     }
 

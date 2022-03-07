@@ -1,4 +1,4 @@
-1$$$MULTIPLECHOICEQUESTION$$$What subject did you study at university?$$$Computer Science/Software Engineering,0
+1$$$MULTIPLECHOICEQUESTION$$$What subject did you study at university?$$$Computer Science/Software Engineering
 2$$$CHECKBOXQUESTION$$$Which of the following languages did you know prior to starting your degree?$$$Java$$Visual Basic
 3$$$RANKGROUPQUESTION$$$How useful have these languages been in your career$$$Java:::1:::Rarely useful$$Visual Basic:::0:::Not at all useful
 4$$$CHECKBOXQUESTION$$$Which of the following web frameworks did you know prior to starting your degree?$$$Django$$Ruby on Rails$$Symfony

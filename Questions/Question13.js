@@ -1,7 +1,7 @@
-let QUESTION =     
+QUESTION =     
 new QuestionParams(
     new RankGroup(
-        11,
+        13,
         "What percentage of this time was during work hours",
         "Percentage",
         [],
@@ -10,7 +10,12 @@ new QuestionParams(
     ),
     null,
     function(question, questions){
-        question.setPrompts(questions[9].question.answer + "(% of " + questions[12].answer[0] + " hours)")
+        var extraPrompts = []
+        for(var i = 0; i < questions[11].question.answer.length; i++){
+            extraPrompts.push("(% of " + questions[11].question.answer[i][0] + " hours)")
+        }
+        question.setPrompts(questions[9].question.answer)
+        question.setExtraPrompts(extraPrompts)
     }
 )
 SURVEY.addQuestion(QUESTION)

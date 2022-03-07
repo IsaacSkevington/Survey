@@ -1,7 +1,7 @@
-let QUESTION =     
+QUESTION =     
 new QuestionParams(
     new RankGroup(
-        11,
+        12,
         "How much time did you spend learning these languages (hours)",
         "Hours",
         [],

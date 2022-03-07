@@ -31,7 +31,7 @@ class MultipleChoiceQuestion extends Question{
         if(!this.validateAnswer){
             return null;
         }
-        return this.radioGroup.getSelected();
+        return this.radioGroup.getSelected()[0];
     }
 
     asString(){

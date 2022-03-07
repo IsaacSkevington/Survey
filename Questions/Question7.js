@@ -1,4 +1,4 @@
-let QUESTION7 =     
+QUESTION =     
 new QuestionParams(
     new RankGroup(
         7,
@@ -13,4 +13,4 @@ new QuestionParams(
         question7.setPrompts(questions[5].question.answer)
     }
 )
-SURVEY.addQuestion(QUESTION7)
+SURVEY.addQuestion(QUESTION)
