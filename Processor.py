@@ -105,6 +105,10 @@ def main():
         process(answerFile)
     writeWorkbook("Survey.xlsx", questions)
 
+if __name__ == "__main__":
+    main()
+
+
 
 
 
