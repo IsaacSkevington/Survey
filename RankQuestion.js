@@ -15,4 +15,6 @@ class RankQuestion{
         this.radioGroup.display(parent, ["td", "RankQuestionRadio"]);
         this.radioGroup.group.insertBefore(promptDisplay, this.radioGroup.group.childNodes[0]);
     }
+
+    
 }
