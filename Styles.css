@@ -9,12 +9,13 @@ ProgressContainer{
 ProgressWindow{
   
   display: grid;
-  padding: 1%;
+  padding: 20px;
   /*! width: 100%; */
   justify-content: center;
   align-items: center;
   /*! width: auto; */
   border: 1px solid black;
+  border-radius: 1rem;
 }
 
 label.ProgressBar{
