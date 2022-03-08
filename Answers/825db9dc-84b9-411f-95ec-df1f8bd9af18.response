@@ -1,0 +1,26 @@
+1$$$MULTIPLECHOICEQUESTION$$$What subject did you study at university?$$$Other non-science degree
+2$$$CHECKBOXQUESTION$$$Which of the following languages did you know prior to starting your degree?$$$Visual Basic$$C#$$Ruby$$JavaScript
+3$$$RANKGROUPQUESTION$$$How useful have these languages been in your career?$$$Visual Basic:::2:::Sometimes Useful
+4$$$CHECKBOXQUESTION$$$Which of the following web frameworks did you know prior to starting your degree?$$$Express$$Ruby on Rails$$Symfony$$Flask$$Gatsby$$Laravel
+5$$$RANKGROUPQUESTION$$$How useful have these frameworks been in your career?$$$Express:::4:::Indispensible
+6$$$CHECKBOXQUESTION$$$Which of the following languages did you learn during your degree?$$$C#$$Ruby
+7$$$RANKGROUPQUESTION$$$How useful have these languages been in your career?$$$C#:::0:::Not at all useful$$Ruby:::1:::Rarely useful
+8$$$CHECKBOXQUESTION$$$Which of the following frameworks did you learn during your degree?$$$Ruby on Rails$$Symfony
+9$$$RANKGROUPQUESTION$$$How useful have these frameworks been in your career?$$$Ruby on Rails:::0:::Not at all useful$$Symfony:::1:::Rarely useful
+10$$$CHECKBOXQUESTION$$$Which of the following languages did you learn as part of your job?$$$JavaScript
+11$$$RANKGROUPQUESTION$$$How useful have these languages been in your career?$$$JavaScript:::0:::Not at all useful
+12$$$RANKGROUPQUESTION$$$How much time did you spend learning these languages (hours)?$$$JavaScript:::3:::101-200
+13$$$RANKGROUPQUESTION$$$What percentage of this time was during work hours?$$$JavaScript:::2:::21-30
+14$$$RANKGROUPQUESTION$$$How has using these languages affected the speed of your workflow?$$$JavaScript:::1:::Slower
+15$$$RANKGROUPQUESTION$$$How has using these languages affected the accuracy (number of bugs) of your workflow?$$$JavaScript:::3:::More accurate
+16$$$CHECKBOXQUESTION$$$Which of the following frameworks did you learn as part of your job?$$$Flask$$Gatsby$$Laravel
+17$$$RANKGROUPQUESTION$$$How useful have these frameworks been in your career?$$$Flask:::0:::Not at all useful$$Gatsby:::0:::Not at all useful$$Laravel:::0:::Not at all useful
+18$$$RANKGROUPQUESTION$$$How much time did you spend learning these frameworks (hours)?$$$Flask:::1:::11-50$$Gatsby:::2:::51-100$$Laravel:::3:::101-200
+19$$$RANKGROUPQUESTION$$$What percentage of this time was during work hours?$$$Flask:::4:::41-50$$Gatsby:::4:::41-50$$Laravel:::3:::31-40
+20$$$RANKGROUPQUESTION$$$How has using these frameworks affected the speed of your workflow?$$$Flask:::2:::No Change$$Gatsby:::1:::Slower$$Laravel:::0:::Much slower
+21$$$RANKGROUPQUESTION$$$How has using these frameworks affected the accuracy (number of bugs) of your workflow?$$$Flask:::2:::No Change$$Gatsby:::1:::Less accurate$$Laravel:::2:::No Change
+22$$$RANKGROUPQUESTION$$$Of the languages you have learnt, do you think your time was well spent learning them?$$$Visual Basic:::1:::No$$C#:::0:::Yes$$Ruby:::1:::No$$JavaScript:::2:::Not Sure
+23$$$RANKGROUPQUESTION$$$Of the frameworks you have learnt, do you think your time was well spent learning them?$$$Express:::0:::Yes$$Ruby on Rails:::0:::Yes$$Symfony:::1:::No$$Flask:::0:::Yes$$Gatsby:::1:::No$$Laravel:::1:::No
+24$$$RANKGROUPQUESTION$$$What is your opinion on the following statements about learning languages and frameworks?$$$Learning new technologies improves my career prospects:::2:::Neutral$$I am worried the frameworks I learn now will be outdated in 5 years:::2:::Neutral$$Learning new technologies is a part of my job I look forward to:::2:::Neutral$$New technologies provide new and useful features for me to use:::2:::Neutral$$New technologies give me greater control over the back-end of my application:::2:::Neutral$$New technologies give me greater control over the front-end of my application:::2:::Neutral$$I am always learning a new technology:::2:::Neutral$$Learning new technologies negatively affects my work productivity:::2:::Neutral$$Learning new technologies negatively impacts my free time:::2:::Neutral$$I feel pressured by superiors to learn technologies I otherwise wouldn't:::2:::Neutral
+25$$$MULTIPLECHOICEQUESTION$$$I work as part of a team of 2 or more people?$$$Yes
+26$$$RANKGROUPQUESTION$$$What is your opinion on the following statements about learning languages and frameworks?$$$My team's dynamic is negatively affected by learning a new technology:::2:::Neutral$$Learning a new technology as a team is easier than learning it alone:::2:::Neutral$$All members of my team gain an equal amount from learning a new technology:::2:::Neutral$$My team invests a significant amount of money into learning new technologies:::2:::Neutral$$New team members are more likely to be hired if they know the technology the team currently uses:::2:::Neutral
