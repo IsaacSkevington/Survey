@@ -1,0 +1,26 @@
+1$$$MULTIPLECHOICEQUESTION$$$What subject did you study at university?$$$Maths/Physics/Chemistry/Biology
+2$$$CHECKBOXQUESTION$$$Which of the following languages did you know prior to starting your degree?$$$Java$$Python
+3$$$RANKGROUPQUESTION$$$How useful have these languages been in your career?$$$Java:::0:::Not at all useful
+4$$$CHECKBOXQUESTION$$$Which of the following web frameworks did you know prior to starting your degree?$$$Gatsby$$Flask
+5$$$RANKGROUPQUESTION$$$How useful have these frameworks been in your career?$$$Gatsby:::1:::Rarely useful
+6$$$CHECKBOXQUESTION$$$Which of the following languages did you learn during your degree?$$$Python
+7$$$RANKGROUPQUESTION$$$How useful have these languages been in your career?$$$Python:::2:::Sometimes Useful
+8$$$CHECKBOXQUESTION$$$Which of the following frameworks did you learn during your degree?$$$
+9$$$RANKGROUPQUESTION$$$How useful have these frameworks been in your career?$$$
+10$$$CHECKBOXQUESTION$$$Which of the following languages did you learn as part of your job?$$$
+11$$$RANKGROUPQUESTION$$$How useful have these languages been in your career?$$$
+12$$$RANKGROUPQUESTION$$$How much time did you spend learning these languages (hours)?$$$
+13$$$RANKGROUPQUESTION$$$What percentage of this time was during work hours?$$$
+14$$$RANKGROUPQUESTION$$$How has using these languages affected the speed of your workflow?$$$
+15$$$RANKGROUPQUESTION$$$How has using these languages affected the accuracy (number of bugs) of your workflow?$$$
+16$$$CHECKBOXQUESTION$$$Which of the following frameworks did you learn as part of your job?$$$Flask
+17$$$RANKGROUPQUESTION$$$How useful have these frameworks been in your career?$$$Flask:::2:::Sometimes Useful
+18$$$RANKGROUPQUESTION$$$How much time did you spend learning these frameworks (hours)?$$$Flask:::1:::11-50
+19$$$RANKGROUPQUESTION$$$What percentage of this time was during work hours?$$$Flask:::2:::21-30
+20$$$RANKGROUPQUESTION$$$How has using these frameworks affected the speed of your workflow?$$$Flask:::1:::Slower
+21$$$RANKGROUPQUESTION$$$How has using these frameworks affected the accuracy (number of bugs) of your workflow?$$$Flask:::3:::More accurate
+22$$$RANKGROUPQUESTION$$$Of the languages you have learnt, do you think your time was well spent learning them?$$$Java:::0:::Yes$$Python:::0:::Yes
+23$$$RANKGROUPQUESTION$$$Of the frameworks you have learnt, do you think your time was well spent learning them?$$$Gatsby:::0:::Yes$$Flask:::0:::Yes
+24$$$RANKGROUPQUESTION$$$What is your opinion on the following statements about learning languages and frameworks?$$$Learning new technologies improves my career prospects:::2:::Neutral$$I am worried the frameworks I learn now will be outdated in 5 years:::2:::Neutral$$Learning new technologies is a part of my job I look forward to:::2:::Neutral$$New technologies provide new and useful features for me to use:::2:::Neutral$$New technologies give me greater control over the back-end of my application:::2:::Neutral$$New technologies give me greater control over the front-end of my application:::2:::Neutral$$I am always learning a new technology:::3:::Agree$$Learning new technologies negatively affects my work productivity:::2:::Neutral$$Learning new technologies negatively impacts my free time:::2:::Neutral$$I feel pressured by superiors to learn technologies I otherwise wouldn't:::2:::Neutral
+25$$$MULTIPLECHOICEQUESTION$$$I work as part of a team of 2 or more people?$$$Yes
+26$$$RANKGROUPQUESTION$$$What is your opinion on the following statements about learning languages and frameworks?$$$My team's dynamic is negatively affected by learning a new technology:::1:::Disagree$$Learning a new technology as a team is easier than learning it alone:::0:::Strongly disagree$$All members of my team gain an equal amount from learning a new technology:::1:::Disagree$$My team invests a significant amount of money into learning new technologies:::1:::Disagree$$New team members are more likely to be hired if they know the technology the team currently uses:::2:::Neutral
