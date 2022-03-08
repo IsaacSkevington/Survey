@@ -1,0 +1,26 @@
+1$$$MULTIPLECHOICEQUESTION$$$What subject did you study at university?$$$None of the above
+2$$$CHECKBOXQUESTION$$$Which of the following languages did you know prior to starting your degree?$$$C#
+3$$$RANKGROUPQUESTION$$$How useful have these languages been in your career$$$C#:::1:::Rarely useful
+4$$$CHECKBOXQUESTION$$$Which of the following web frameworks did you know prior to starting your degree?$$$Express
+5$$$RANKGROUPQUESTION$$$How useful have these frameworks been in your career$$$Express:::1:::Rarely useful
+6$$$CHECKBOXQUESTION$$$Which of the following languages did you learn during your degree?$$$
+7$$$RANKGROUPQUESTION$$$How useful have these languages been in your career$$$
+8$$$CHECKBOXQUESTION$$$Which of the following frameworks did you learn during your degree?$$$
+9$$$RANKGROUPQUESTION$$$How useful have these frameworks been in your career$$$
+10$$$CHECKBOXQUESTION$$$Which of the following languages did you learn as part of your job?$$$
+11$$$RANKGROUPQUESTION$$$How useful have these languages been in your career$$$
+12$$$RANKGROUPQUESTION$$$How much time did you spend learning these languages (hours)$$$
+13$$$RANKGROUPQUESTION$$$What percentage of this time was during work hours$$$
+14$$$RANKGROUPQUESTION$$$How has using these languages affected the speed of your workflow$$$
+15$$$RANKGROUPQUESTION$$$How has using these languages affected the accuracy (number of bugs) of your workflow$$$
+16$$$CHECKBOXQUESTION$$$Which of the following frameworks did you learn as part of your job?$$$
+17$$$RANKGROUPQUESTION$$$How useful have these frameworks been in your career$$$
+18$$$RANKGROUPQUESTION$$$How much time did you spend learning these frameworks (hours)$$$
+19$$$RANKGROUPQUESTION$$$What percentage of this time was during work hours$$$
+20$$$RANKGROUPQUESTION$$$How has using these frameworks affected the speed of your workflow$$$
+21$$$RANKGROUPQUESTION$$$How has using these frameworks affected the accuracy (number of bugs) of your workflow$$$
+22$$$RANKGROUPQUESTION$$$Of the languages you have learnt, do you think your time was well spent learning them$$$C#:::1:::No
+23$$$RANKGROUPQUESTION$$$Of the frameworks you have learnt, do you think your time was well spent learning them$$$Express:::1:::No
+24$$$RANKGROUPQUESTION$$$What is your opinion on the following statements about learning languages and frameworks$$$Learning new technologies improves my career prospects:::0:::Strongly disagree$$I am worried the frameworks I learn now will be outdated in 5 years:::0:::Strongly disagree$$Learning new technologies is a part of my job I look forward to:::0:::Strongly disagree$$New technologies provide new and useful features for me to use:::0:::Strongly disagree$$New technologies give me greater control over the back-end of my application:::0:::Strongly disagree$$New technologies give me greater control over the front-end of my application:::0:::Strongly disagree$$I am always learning a new technology:::0:::Strongly disagree$$Learning new technologies negatively affects my work productivity:::0:::Strongly disagree$$Learning new technologies negatively impacts my free time:::0:::Strongly disagree$$I feel pressured by superiors to learn technologies I otherwise wouldn't:::0:::Strongly disagree
+25$$$MULTIPLECHOICEQUESTION$$$I work as part of a team of 2 or more people$$$Yes, No
+26$$$RANKGROUPQUESTION$$$What is your opinion on the following statements about learning langauges and frameworks$$$My team's dynamic is negatively affected by learning a new technology:::0:::Strongly disagree$$Learning a new technology as a team is easier than learning it alone:::0:::Strongly disagree$$All members of my team gain an equal amount from learning a new technology:::0:::Strongly disagree$$My team invests a significant amount of money into learning new technologies:::0:::Strongly disagree$$New team members are more likely to be hired if they know the technology the team currently uses:::0:::Strongly disagree
