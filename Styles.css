@@ -73,8 +73,9 @@ RankHeadings{
 
   /*! display: flex; */
   /*! flex-direction: column; */
-  width: 60%;
+  /*! width: 100%; */
   border-collapse: collapse;
+  /*! margin: 2%; */
 }
 MultipleChoiceQuestionRadioGroup{
   
@@ -116,6 +117,10 @@ Question{
 .RankHeading{
   
   font-size: 15pt;
+  padding: 20px;
+  width: min-content;
+  /*! display: block; */
+  margin: 200px;
 }
 
 QuestionPrompt{

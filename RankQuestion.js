@@ -25,4 +25,5 @@ class RankQuestion{
         return this.radioGroup.getSelected()
     }
 
+
 }

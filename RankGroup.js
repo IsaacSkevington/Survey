@@ -9,7 +9,7 @@ class RankGroup extends Question{
         this.ranks = ranks
         this.title = title;
         this.questions = []
-        this.prompts = prompts
+        this.setPrompts(prompts)
         this.extraPrompts = []
         this.answer = []
 

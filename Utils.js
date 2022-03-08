@@ -115,6 +115,14 @@ function difference(array1, array2){
     return out
 }
 
+function intersection(array1, array2){
+    out = array1
+    array2.forEach(e2 => {
+        out.push(e2)
+    })
+    return out
+}
+
 function uploadAnswer(name, text){
     var filename = name + ".response"
     var executeScript = document.createElement('script');
