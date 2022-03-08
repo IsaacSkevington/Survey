@@ -2,10 +2,13 @@
 PromptDisplay{
 
 }
+ProgressContainer{
+  
+}
 
 ProgressWindow{
   
-  display: flex;
+  display: grid;
   padding: 1%;
   /*! width: 100%; */
   justify-content: center;
@@ -17,7 +20,7 @@ ProgressWindow{
 label.ProgressBar{
   
   width: max-content;
-  padding-right: 10%;
+  /*! padding-right: 10%; */
   font-size: 20pt;
   flex-shrink: 0;
 }
