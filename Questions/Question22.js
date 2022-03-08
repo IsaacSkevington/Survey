@@ -2,7 +2,7 @@ QUESTION =
 new QuestionParams(
     new RankGroup(
         22,
-        "Of the languages you have learnt, do you think your time was well spent learning them",
+        "Of the languages you have learnt, do you think your time was well spent learning them?",
         "",
         [],
         ["Yes", "No", "Not Sure"],

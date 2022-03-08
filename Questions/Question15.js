@@ -2,7 +2,7 @@ QUESTION =
 new QuestionParams(
     new RankGroup(
         15,
-        "How has using these languages affected the accuracy (number of bugs) of your workflow",
+        "How has using these languages affected the accuracy (number of bugs) of your workflow?",
         "Accuracy",
         [],
         ["Much less accurate", "Less accurate", "No Change", "More accurate", "Much more accurate"],

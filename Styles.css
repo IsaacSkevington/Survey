@@ -3,6 +3,48 @@ PromptDisplay{
 
 }
 
+ProgressWindow{
+  
+  display: flex;
+  padding: 1%;
+  /*! width: 100%; */
+  justify-content: center;
+  align-items: center;
+  /*! width: auto; */
+  border: 1px solid black;
+}
+
+label.ProgressBar{
+  
+  width: max-content;
+  padding-right: 10%;
+  font-size: 20pt;
+  flex-shrink: 0;
+}
+
+input.ProgressBar{
+  
+}
+
+MainWindow{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+
+Survey{
+  
+  display: flex;
+  width: max-content;
+  padding: 1%;
+}
+
 RankPrompt{
   
   font-size: 20pt;
@@ -109,9 +151,10 @@ RankRadioGroup{
 Question{
   
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: max-content;
 }
 
 .RankHeading{

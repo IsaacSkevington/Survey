@@ -62,6 +62,9 @@ class Question{
         if(this.answer != null){
             this.finishFunction();
         }
+        else{
+            alert("Please answer the question")
+        }
     }
 
 

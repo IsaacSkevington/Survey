@@ -70,6 +70,10 @@ class RankGroup extends Question{
         this.questions.forEach(question => {
             if(!question.validateAnswer()){
                 success = false;
+                question.setIncomplete()
+            }
+            else{
+                question.setComplete()
             }
         });
         return success;

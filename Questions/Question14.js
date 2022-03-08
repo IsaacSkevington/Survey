@@ -2,7 +2,7 @@ QUESTION =
 new QuestionParams(
     new RankGroup(
         14,
-        "How has using these languages affected the speed of your workflow",
+        "How has using these languages affected the speed of your workflow?",
         "New speed of workflow",
         [],
         ["Much slower", "Slower", "No Change", "Faster", "Much Faster"],

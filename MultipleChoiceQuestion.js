@@ -29,7 +29,7 @@ class MultipleChoiceQuestion extends Question{
     }
 
     getAnswer(){
-        if(!this.validateAnswer){
+        if(!this.validateAnswer()){
             return null;
         }
         return this.radioGroup.getSelected()[0];

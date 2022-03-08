@@ -38,12 +38,27 @@ class Survey{
 
 
     display(parent){
+        this.progressDisplay = document.createElement("progress")
+        this.progressDisplay.className = "ProgressBar"
+        this.progressDisplay.max = this.questions.length
+        this.progressDisplay.value = 0
+        var id = IDManager.getID()
+        this.progressDisplay.id = id
+        this.progressLabel = document.createElement("label")
+        this.progressLabel.className = "ProgressBar"
+        this.progressLabel.for = id 
+        var progressWindow = document.createElement("ProgressWindow")
+        progressWindow.appendChild(this.progressLabel)
+        progressWindow.appendChild(this.progressDisplay)        
+        parent.appendChild(progressWindow)
         this.questionFrame = document.createElement("Survey")
         parent.appendChild(this.questionFrame);
         this.displayQuestion();
     }
 
     displayQuestion(){
+        this.progressDisplay.value++
+        this.progressLabel.innerHTML = "Question " + this.progressDisplay.value + " of " + this.questions.length
         try{
             this.questions[this.questionNumber - 1].question.destroy();
         }

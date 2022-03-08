@@ -2,7 +2,7 @@ QUESTION =
 new QuestionParams(
     new RankGroup(
         7,
-        "How useful have these languages been in your career",
+        "How useful have these languages been in your career?",
         "Usefulness",
         [],
         ["Not at all useful", "Rarely useful", "Sometimes Useful", "Very Useful", "Indispensible"],

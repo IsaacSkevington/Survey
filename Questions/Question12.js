@@ -2,7 +2,7 @@ QUESTION =
 new QuestionParams(
     new RankGroup(
         12,
-        "How much time did you spend learning these languages (hours)",
+        "How much time did you spend learning these languages (hours)?",
         "Hours",
         [],
         ["0-10", "11-50", "51-100", "101-200", "201-500", "500+"],

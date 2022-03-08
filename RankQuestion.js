@@ -9,12 +9,20 @@ class RankQuestion{
     }
 
 
+    setIncomplete(){
+        this.promptDisplay.style.color = "red"
+    }
+
+    setComplete(){
+        this.promptDisplay.style.color = "black"
+    }
+
 
     display(parent){
-        let promptDisplay = document.createElement("RankPrompt");
-        promptDisplay.innerHTML = this.prompt + " " + this.extraPrompt;
+        this.promptDisplay = document.createElement("RankPrompt");
+        this.promptDisplay.innerHTML = this.prompt + " " + this.extraPrompt;
         this.radioGroup.display(parent, ["td", "RankQuestionRadio"]);
-        this.radioGroup.group.insertBefore(promptDisplay, this.radioGroup.group.childNodes[0]);
+        this.radioGroup.group.insertBefore(this.promptDisplay, this.radioGroup.group.childNodes[0]);
     }
 
     validateAnswer(){

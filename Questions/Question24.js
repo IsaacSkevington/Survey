@@ -2,7 +2,7 @@ QUESTION =
 new QuestionParams(
     new RankGroup(
         24,
-        "What is your opinion on the following statements about learning languages and frameworks",
+        "What is your opinion on the following statements about learning languages and frameworks?",
         "Opinion",
         [
             "Learning new technologies improves my career prospects",
